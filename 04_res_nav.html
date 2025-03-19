@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Menu</title>
+    <style>
+      .nav-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .nav {
+        background: #f4f4f4;
+        padding: 10px;
+      }
+
+      .nav-links li {
+        list-style: none;
+      }
+
+      .nav-links li a {
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .nav-links li a:hover {
+        background-color: #eee;
+        border: 2px solid #ddd;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .nav-links li {
+          list-style: none;
+          padding: 10px;
+        }
+
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

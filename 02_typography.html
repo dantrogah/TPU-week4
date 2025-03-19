@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Typography</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f4;
+      height: 100vh;
+    }
+
+    .container_p {
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .container_p {
+        font-size: 22px;
+        line-height: 2;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .container_p {
+        font-size: 26px;
+        line-height: 2.5;
+      }
+    }
+    
+  </style>
+  <body>
+    <div class="container">
+      <p class="container_p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A blanditiis,
+        aut quae voluptates distinctio suscipit? Molestiae dolorem officiis ad
+        quo?
+      </p>
+    </div>
+  </body>
+</html>
