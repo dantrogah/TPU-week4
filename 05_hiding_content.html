@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiding Content</title>
+    <style>
+      div {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        color: #000;
+        padding-top: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+      }
+
+      .first {
+        background: red;
+      }
+
+      .second {
+        background: yellow;
+      }
+
+      .third {
+        background: green;
+      }
+
+      .fourth {
+        background: skyblue;
+      }
+
+      @media (max-width: 900px) {
+        .first {
+          display: none;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .second {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">First</div>
+    <div class="second">Second</div>
+    <div class="third">Third</div>
+    <div class="fourth">Four</div>
+  </body>
+</html>
